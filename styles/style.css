@@ -1,0 +1,96 @@
+@import url(header_nav.css);
+@import url(footer.css);
+
+:root {
+    --accent-color: #F39200;
+    --olive-color: #444A38;
+    --secondary-color: #C6C6C6;
+    --black-color: #000000;
+    --white-color: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "UAF-Medium";
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.btn {
+    padding: 8px 22px;
+    border: 3px solid var(--accent-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "UAF-SemiBold";
+    letter-spacing: 1px;
+    font-size: 20px;
+    transition: .3s ease;
+}
+
+.btn:hover {
+    border-radius: 2px;
+}
+
+.btn-filled {
+    background-color: var(--accent-color);
+    color: var(--black-color);
+}
+
+.btn-filled:hover {
+    background: none;
+    color: var(--accent-color);
+}
+
+.btn-bordered {
+    color: var(--accent-color);
+}
+
+.btn-bordered:hover {
+    background-color: var(--accent-color);
+    color: var(--black-color);
+}
+
+section {
+    padding: 50px 150px;
+    z-index: 0;
+}
+
+h1,
+h2 {
+    font-size: 64px;
+}
+
+.bg-filter {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: rgba(68, 74, 56, .6);
+}
+
+@font-face {
+    font-family: "UAF-Bold";
+    src: url(../fonts/UAFSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: "UAF-SemiBold";
+    src: url(../fonts/UAFSans-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "UAF-Medium";
+    src: url(../fonts/UAFSans-Medium.ttf);
+}
+
+@font-face {
+    font-family: "UAF-Regular";
+    src: url(../fonts/UAFSans-Regular.ttf);
+}
