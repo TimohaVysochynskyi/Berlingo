@@ -8,6 +8,7 @@
 
   <link rel="stylesheet" href="./styles/style.css" />
   <link rel="stylesheet" href="./styles/main.css" />
+  <link rel="stylesheet" href="./styles/responsive.css">
 </head>
 
 <body>
@@ -19,6 +20,7 @@
         <img src="./assets/lf.png" alt="LF" class="header__icon" />
       </div>
       <ul class="header__list">
+        <a href="javascript:void(0)" class="header__list-close"><img src="./assets/close-arrow.png" alt="Закрити"></a>
         <li class="header__list-item">
           <a class="header__list-link header__list-link-active" href="#">Головна</a>
         </li>
@@ -35,6 +37,7 @@
           <a class="header__list-link btn btn-bordered" href="#">Підтримати</a>
         </li>
       </ul>
+      <a href="javascript:void(0)" id="burger-btn" class="header__burger"><img src="./assets/burger-menu.png" alt="Меню"></a>
     </nav>
     <div class="header__content-wrapper">
       <img src="./assets/berlingo-colored.png" alt="БЕРЛІНГО" class="header__content-logo" />
@@ -61,7 +64,8 @@
   <!-- Спробувати застосувати GRID -->
   <section class="about" id="about">
     <div class="about__row">
-      <img src="./assets/about-batalion.jpg" alt="Картинка про батальйон" class="about__img" />
+      <h2 class="about__title about__title-mobile">Про батальйон</h2>
+      <img src="./assets/about-batalion.jpg" alt="Картинка про батальйон" class="about__img about__img-mobile" />
       <div class="about__row-col">
         <h2 class="about__title">Про батальйон</h2>
         <p class="about__text">
@@ -78,6 +82,7 @@
     <div class="about__row">
       <div class="about__row-col">
         <h2 class="about__title">Бойовий шлях</h2>
+        <img src="./assets/fight-road.jpg" alt="Картинка про батальйон" class="about__img about__img-mobile" />
         <p class="about__text">
           З моменту створення 210 окремий спеціальний батальйон «BERLINGO»
           пройшов складний і звитяжний шлях. Навесні 2022 року батальйон
@@ -329,7 +334,7 @@
   <section class="full-contact" id="contact">
     <div class="full-contact__col">
       <div class="full-contact__content-block">
-        <h2 class="full-contact__title">Наші<br />Контакти</h2>
+        <h2 class="full-contact__title">Наші <br />Контакти</h2>
         <p class="full-contact__subtitle">
           Ви можете зв’язатись з нами будь яким зручним для Вас способом.
         </p>
@@ -385,6 +390,9 @@
       </ul>
     </nav>
   </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./scripts/burger.js"></script>
 </body>
 
 </html>

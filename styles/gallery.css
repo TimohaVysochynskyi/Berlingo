@@ -19,12 +19,25 @@ body{
     width: 100%;
     display: flex;
     flex-direction: column;
-
+    gap: 20px 0;
+    padding: 40px 0;
 }
-.gallery__item-date{
+.gallery__item-date,
+.gallery__item-description{
     font-size: 30px;
     font-family: "UAF-Regular";
+    text-align: justify;
+    color: var(--white-color);
 }
 .gallery__item-img{
     width: 100%;
+}
+.gallery__item-description{
+    font-size: 26px;
+}
+.gallery__line{
+    width: 100%;
+    margin: 20px 0;
+    border: 2px solid var(--white-color);
+    background: none;
 }
