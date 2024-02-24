@@ -1,255 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BERLINGO | Стіна пам'яті</title>
 
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/memory.css" />
-  </head>
-  <body>
-    <!-- ХЕДЕР -->
-    <header class="header">
-      <nav class="header__nav">
-        <div class="header__icon-wrapper">
-          <img src="./assets/mo.png" alt="МО" class="header__icon" />
-          <img src="./assets/lf.png" alt="LF" class="header__icon" />
-        </div>
-        <ul class="header__list">
-          <li class="header__list-item">
-            <a class="header__list-link" href="./index.html">Головна</a>
-          </li>
-          <li class="header__list-item">
-            <a class="header__list-link header__list-link-active" href="#"
-              >Стіна пам'яті</a
-            >
-          </li>
-          <li class="header__list-item">
-            <a class="header__list-link" href="./anketa.html"
-              >Анкета на вступ</a
-            >
-          </li>
-          <li class="header__list-item">
-            <a class="header__list-link" href="./gallery.html">Галерея</a>
-          </li>
-          <li class="header__list-item">
-            <a class="header__list-link btn btn-bordered" href="#"
-              >Підтримати</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <div class="header__about">
-        <img
-          src="./assets/memory/logo.png"
-          alt="Емблема батальйону"
-          class="header__about-logo" />
-        <div class="header__about-col">
-          <h1 class="header__about-title">Стіна <span>Пам'яті</span></h1>
-          <p class="header__about-text">
-            Вони вірили у світле майбутнє нашого народу. <br />
-            Вони мріяли про вільне життя у мирних українських містах. <br />
-            Вони боролись за свободу своїх дітей. І віддали все, що було у них,
-            заради незалежності рідної землі. <br />
-            Обличчя Героїв! Пам’ятай про них кожного дня! Живи так, щоб тобі не
-            було соромно дивитись у ці очі! <br />
-          </p>
-        </div>
-      </div>
-    </header>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>BERLINGO | Стіна пам'яті</title>
 
-    <!-- ЗАГИБЛІ -->
-    <section class="lost-wrapper">
-      <ul class="lost">
-        <li class="lost__item">
-          <img
-            src="./assets/memory/boroda.png"
-            alt="Андрій Ус"
-            class="lost__item-img" />
-          <div class="lost__item-data">
-            <p class="lost__item-personal">
-              <span class="lost__item-rank">сержант</span><br />
-              <span class="lost__item-name">Андрій Ус</span><br />
-              <span class="lost__item-psevdo">/Борода/</span> <br />
-            </p>
-            <br />
-            <p class="lost__item-description">
-              Загинув 11.08.2022 року при обороні населеного пункту Дача
-              Донецької області
-            </p>
-          </div>
-        </li>
-        <li class="lost__item">
-          <img
-            src="./assets/memory/rus.png"
-            alt="Рулан Кльоцкін"
-            class="lost__item-img" />
-          <div class="lost__item-data">
-            <p class="lost__item-personal">
-              <span class="lost__item-rank">солдат</span><br />
-              <span class="lost__item-name">Рулан Кльоцкін</span><br />
-              <span class="lost__item-psevdo">/Рус/</span> <br />
-            </p>
-            <br />
-            <p class="lost__item-description">
-              Загинув 11.08.2022 року при обороні населеного пункту Дача
-              Донецької області
-            </p>
-          </div>
-        </li>
-        <li class="lost__item">
-          <img
-            src="./assets/memory/nimets.png"
-            alt="Сергій Закреничний"
-            class="lost__item-img" />
-          <div class="lost__item-data">
-            <p class="lost__item-personal">
-              <span class="lost__item-rank">сержант</span><br />
-              <span class="lost__item-name">Сергій Закреничний</span><br />
-              <span class="lost__item-psevdo">/Німець/</span> <br />
-            </p>
-            <br />
-            <p class="lost__item-description">
-              Загинув 11.08.2022 року при обороні населеного пункту Дача
-              Донецької області
-            </p>
-          </div>
-        </li>
-        <li class="lost__item">
-          <img
-            src="./assets/memory/lubchyk.png"
-            alt="Олег Дерманський"
-            class="lost__item-img" />
-          <div class="lost__item-data">
-            <p class="lost__item-personal">
-              <span class="lost__item-rank">солдат</span><br />
-              <span class="lost__item-name">Олег Дерманський</span><br />
-              <span class="lost__item-psevdo">/Любчик/</span> <br />
-            </p>
-            <br />
-            <p class="lost__item-description">
-              Загинув 20.12.2022 року при обороні населеного пункту Берестове
-              Донецької області
-            </p>
-          </div>
-        </li>
-        <li class="lost__item">
-          <img
-            src="./assets/memory/harbuz.png"
-            alt="Олег Дерманський"
-            class="lost__item-img" />
-          <div class="lost__item-data">
-            <p class="lost__item-personal">
-              <span class="lost__item-rank">сержант</span><br />
-              <span class="lost__item-name">Антон Гаарбуз</span><br />
-              <span class="lost__item-psevdo">/Гарбуз/</span> <br />
-            </p>
-            <br />
-            <p class="lost__item-description">
-              Загинув 31.03.2023 року при обороні населеного пункту Бахмут
-              Донецької області
-            </p>
-          </div>
-        </li>
-        <li class="lost__item">
-          <img
-            src="./assets/memory/starunia.png"
-            alt="Тарас Григорук"
-            class="lost__item-img" />
-          <div class="lost__item-data">
-            <p class="lost__item-personal">
-              <span class="lost__item-rank">молодший лейтенант</span><br />
-              <span class="lost__item-name">Тарас Григорук</span><br />
-              <span class="lost__item-psevdo">/Старуня/</span> <br />
-            </p>
-            <br />
-            <p class="lost__item-description">
-              Загинув 10.11.2023 року при обороні населеного пункту Куп’янськ
-              Харківської області
-            </p>
-          </div>
-        </li>
-        <li class="lost__item">
-          <img
-            src="./assets/memory/rais.png"
-            alt="Юрій Метельський"
-            class="lost__item-img" />
-          <div class="lost__item-data">
-            <p class="lost__item-personal">
-              <span class="lost__item-rank">солдат</span><br />
-              <span class="lost__item-name">Юрій Метельський</span><br />
-              <span class="lost__item-psevdo">/Райс/</span> <br />
-            </p>
-            <br />
-            <p class="lost__item-description">
-              Загинув 10.11.2023 року при обороні населеного пункту Куп’янськ
-              Харківської області
-            </p>
-          </div>
-        </li>
-        <li class="lost__item">
-          <img
-            src="./assets/memory/life.png"
-            alt="Володимир Комаров"
-            class="lost__item-img" />
-          <div class="lost__item-data">
-            <p class="lost__item-personal">
-              <span class="lost__item-rank">солдат</span><br />
-              <span class="lost__item-name">Володимир Комаров</span><br />
-              <span class="lost__item-psevdo">/Лайф/</span> <br />
-            </p>
-            <br />
-            <p class="lost__item-description">
-              Загинув 11.11.2023 року при обороні населеного пункту Куп’янськ
-              Харківської області
-            </p>
-          </div>
-        </li>
-        <li class="lost__item">
-          <img
-            src="./assets/memory/shved.png"
-            alt="Олександр Войтенко"
-            class="lost__item-img" />
-          <div class="lost__item-data">
-            <p class="lost__item-personal">
-              <span class="lost__item-rank">лейтенант</span><br />
-              <span class="lost__item-name">Олександр Войтенко</span><br />
-              <span class="lost__item-psevdo">/Швед/</span> <br />
-            </p>
-            <br />
-            <p class="lost__item-description">
-              Загинув 24.11.2023 року при обороні населеного пункту Куп’янськ
-              Харківської області
-            </p>
-          </div>
-        </li>
-      </ul>
-    </section>
+	<link rel="stylesheet" href="./styles/style.css" />
+	<link rel="stylesheet" href="./styles/memory.css" />
+</head>
 
-    <!-- ФУТЕР -->
-    <footer class="footer">
-      <nav class="footer__nav">
-        <div class="footer__icon-wrapper">
-          <img src="./assets/mo.png" alt="МО" class="footer__icon" />
-          <img src="./assets/lf.png" alt="LF" class="footer__icon" />
-        </div>
-        <ul class="footer__list">
-          <li class="footer__list-item">
-            <a class="footer__list-link btn btn-bordered" href="#"
-              >Підтримати</a
-            >
-          </li>
-          <li class="footer__list-item">
-            <a class="footer__list-link" href="./anketa.html"
-              >Анкета на вступ</a
-            >
-          </li>
-          <li class="footer__list-item">
-            <a class="footer__list-link" href="#">Стіна пам'яті</a>
-          </li>
-        </ul>
-      </nav>
-    </footer>
-  </body>
+<body>
+	<!-- ХЕДЕР -->
+	<header class="header">
+		<nav class="header__nav">
+			<div class="header__icon-wrapper">
+				<img src="./assets/mo.png" alt="МО" class="header__icon" />
+				<img src="./assets/lf.png" alt="LF" class="header__icon" />
+			</div>
+			<ul class="header__list">
+				<li class="header__list-item">
+					<a class="header__list-link" href="./index.html">Головна</a>
+				</li>
+				<li class="header__list-item">
+					<a class="header__list-link header__list-link-active" href="#">Стіна пам'яті</a>
+				</li>
+				<li class="header__list-item">
+					<a class="header__list-link" href="./anketa.html">Анкета на вступ</a>
+				</li>
+				<li class="header__list-item">
+					<a class="header__list-link" href="./gallery.html">Галерея</a>
+				</li>
+				<li class="header__list-item">
+					<a class="header__list-link btn btn-bordered" href="#">Підтримати</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="header__about">
+			<img src="./assets/memory/logo.png" alt="Емблема батальйону" class="header__about-logo" />
+			<div class="header__about-col">
+				<h1 class="header__about-title">Стіна <span>Пам'яті</span></h1>
+				<p class="header__about-text">
+					Вони вірили у світле майбутнє нашого народу. <br />
+					Вони мріяли про вільне життя у мирних українських містах. <br />
+					Вони боролись за свободу своїх дітей. І віддали все, що було у них,
+					заради незалежності рідної землі. <br />
+					Обличчя Героїв! Пам’ятай про них кожного дня! Живи так, щоб тобі не
+					було соромно дивитись у ці очі! <br />
+				</p>
+			</div>
+		</div>
+	</header>
+
+	<!-- ЗАГИБЛІ -->
+	<section class="lost-wrapper">
+		<ul class="lost">
+			<li class="lost__item">
+				<img src="./assets/memory/boroda.png" alt="Андрій Ус" class="lost__item-img" />
+				<div class="lost__item-data">
+					<p class="lost__item-personal">
+						<span class="lost__item-rank">сержант</span><br />
+						<span class="lost__item-name">Андрій Ус</span><br />
+						<span class="lost__item-psevdo">/Борода/</span> <br />
+					</p>
+					<br />
+					<p class="lost__item-description">
+						Загинув 11.08.2022 року при обороні населеного пункту Дача
+						Донецької області
+					</p>
+				</div>
+			</li>
+			<li class="lost__item">
+				<img src="./assets/memory/rus.png" alt="Рулан Кльоцкін" class="lost__item-img" />
+				<div class="lost__item-data">
+					<p class="lost__item-personal">
+						<span class="lost__item-rank">солдат</span><br />
+						<span class="lost__item-name">Рулан Кльоцкін</span><br />
+						<span class="lost__item-psevdo">/Рус/</span> <br />
+					</p>
+					<br />
+					<p class="lost__item-description">
+						Загинув 11.08.2022 року при обороні населеного пункту Дача
+						Донецької області
+					</p>
+				</div>
+			</li>
+			<li class="lost__item">
+				<img src="./assets/memory/nimets.png" alt="Сергій Закреничний" class="lost__item-img" />
+				<div class="lost__item-data">
+					<p class="lost__item-personal">
+						<span class="lost__item-rank">сержант</span><br />
+						<span class="lost__item-name">Сергій Закреничний</span><br />
+						<span class="lost__item-psevdo">/Німець/</span> <br />
+					</p>
+					<br />
+					<p class="lost__item-description">
+						Загинув 11.08.2022 року при обороні населеного пункту Дача
+						Донецької області
+					</p>
+				</div>
+			</li>
+			<li class="lost__item">
+				<img src="./assets/memory/lubchyk.png" alt="Олег Дерманський" class="lost__item-img" />
+				<div class="lost__item-data">
+					<p class="lost__item-personal">
+						<span class="lost__item-rank">солдат</span><br />
+						<span class="lost__item-name">Олег Дерманський</span><br />
+						<span class="lost__item-psevdo">/Любчик/</span> <br />
+					</p>
+					<br />
+					<p class="lost__item-description">
+						Загинув 20.12.2022 року при обороні населеного пункту Берестове
+						Донецької області
+					</p>
+				</div>
+			</li>
+			<li class="lost__item">
+				<img src="./assets/memory/harbuz.png" alt="Олег Дерманський" class="lost__item-img" />
+				<div class="lost__item-data">
+					<p class="lost__item-personal">
+						<span class="lost__item-rank">сержант</span><br />
+						<span class="lost__item-name">Антон Гаарбуз</span><br />
+						<span class="lost__item-psevdo">/Гарбуз/</span> <br />
+					</p>
+					<br />
+					<p class="lost__item-description">
+						Загинув 31.03.2023 року при обороні населеного пункту Бахмут
+						Донецької області
+					</p>
+				</div>
+			</li>
+			<li class="lost__item">
+				<img src="./assets/memory/starunia.png" alt="Тарас Григорук" class="lost__item-img" />
+				<div class="lost__item-data">
+					<p class="lost__item-personal">
+						<span class="lost__item-rank">молодший лейтенант</span><br />
+						<span class="lost__item-name">Тарас Григорук</span><br />
+						<span class="lost__item-psevdo">/Старуня/</span> <br />
+					</p>
+					<br />
+					<p class="lost__item-description">
+						Загинув 10.11.2023 року при обороні населеного пункту Куп’янськ
+						Харківської області
+					</p>
+				</div>
+			</li>
+			<li class="lost__item">
+				<img src="./assets/memory/rais.png" alt="Юрій Метельський" class="lost__item-img" />
+				<div class="lost__item-data">
+					<p class="lost__item-personal">
+						<span class="lost__item-rank">солдат</span><br />
+						<span class="lost__item-name">Юрій Метельський</span><br />
+						<span class="lost__item-psevdo">/Райс/</span> <br />
+					</p>
+					<br />
+					<p class="lost__item-description">
+						Загинув 10.11.2023 року при обороні населеного пункту Куп’янськ
+						Харківської області
+					</p>
+				</div>
+			</li>
+			<li class="lost__item">
+				<img src="./assets/memory/life.png" alt="Володимир Комаров" class="lost__item-img" />
+				<div class="lost__item-data">
+					<p class="lost__item-personal">
+						<span class="lost__item-rank">солдат</span><br />
+						<span class="lost__item-name">Володимир Комаров</span><br />
+						<span class="lost__item-psevdo">/Лайф/</span> <br />
+					</p>
+					<br />
+					<p class="lost__item-description">
+						Загинув 11.11.2023 року при обороні населеного пункту Куп’янськ
+						Харківської області
+					</p>
+				</div>
+			</li>
+			<li class="lost__item">
+				<img src="./assets/memory/shved.png" alt="Олександр Войтенко" class="lost__item-img" />
+				<div class="lost__item-data">
+					<p class="lost__item-personal">
+						<span class="lost__item-rank">лейтенант</span><br />
+						<span class="lost__item-name">Олександр Войтенко</span><br />
+						<span class="lost__item-psevdo">/Швед/</span> <br />
+					</p>
+					<br />
+					<p class="lost__item-description">
+						Загинув 24.11.2023 року при обороні населеного пункту Куп’янськ
+						Харківської області
+					</p>
+				</div>
+			</li>
+		</ul>
+	</section>
+
+	<!-- ФУТЕР -->
+	<footer class="footer">
+		<nav class="footer__nav">
+			<div class="footer__icon-wrapper">
+				<img src="./assets/mo.png" alt="МО" class="footer__icon" />
+				<img src="./assets/lf.png" alt="LF" class="footer__icon" />
+			</div>
+			<ul class="footer__list">
+				<li class="footer__list-item">
+					<a class="footer__list-link btn btn-bordered" href="#">Підтримати</a>
+				</li>
+				<li class="footer__list-item">
+					<a class="footer__list-link" href="./anketa.html">Анкета на вступ</a>
+				</li>
+				<li class="footer__list-item">
+					<a class="footer__list-link" href="#">Стіна пам'яті</a>
+				</li>
+			</ul>
+		</nav>
+	</footer>
+</body>
+
 </html>

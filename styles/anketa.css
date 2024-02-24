@@ -1,0 +1,143 @@
+body{
+    background-image: url(../assets/anketa.png);
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 50px;
+}
+.header__nav{
+    margin-bottom: 0;
+}
+.anketa-title{
+    color: var(--white-color);
+    margin-top: 30px;
+}
+.anketa-note{
+    margin-top: 20px;
+    color: var(--white-color);
+}
+.anketa-note span{
+    color: var(--accent-color);
+}
+.anketa-wrapper{
+    padding: 0 150px;
+}
+.anketa{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 55px 0;
+}
+.anketa__row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.anketa__row:last-child{
+    justify-content: center;
+}
+.anketa__input-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+}
+.anketa__input-wrapper:first-child{
+    margin-left: 0;
+}
+.anketa__input-wrapper:last-child{
+    margin-right: 0;
+}
+.anketa__label{
+    color: var(--white-color);
+    font-family: "UAF-Medium";
+    letter-spacing: .4px;
+}
+.anketa__label span{
+    color: var(--accent-color);
+}
+.anketa__input{
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    border-bottom: 3px solid var(--secondary-color);
+    font-size: 30px;
+    color: var(--white-color);
+    font-family: "UAF-Regular";
+    letter-spacing: .5px;
+    padding: 10px 0;
+}
+.anketa__input::placeholder{
+    color: var(--secondary-color);
+}
+.anketa__input-row{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+    padding: 10px 0;
+    padding-left: 5px;
+    color: var(--white-color);
+}
+.anketa__input-row input{
+    width: auto;
+    transform: scale(1.9);
+    margin-right: 20px;
+    margin-top: 3px;
+}
+
+
+.name-input{
+    width: calc(35% - 15px);
+}
+.year-input{
+    width: calc(30% - 30px);
+}
+.tel-input{
+    width: calc(35% - 15px);
+}
+
+
+.degree-input{
+    width: calc(35% - 15px);
+}
+.school-input{
+    width: calc(65% - 15px);
+}
+
+
+.exp-in-structure-input{
+    width: calc(15% - 15px);
+}
+.structure-input{
+    width: calc(20% - 30px);
+}
+.rank-input{
+    width: calc(30% - 30px);
+}
+.vos-input{
+    width: calc(35% - 15px);
+}
+
+
+.exp-in-battle-input{
+    width: calc(15% - 15px);
+}
+.battle-input{
+    width: calc(20% - 30px);
+}
+.exp-with-guns-input{
+    width: calc(20% - 30px);
+}
+.guns-input{
+    width: calc(45% - 15px);
+}
+
+
+.driver-input{
+    width: calc(35% - 15px);
+}
+.notes-input{
+    width: calc(65% - 15px);
+}

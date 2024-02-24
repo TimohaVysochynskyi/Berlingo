@@ -1,0 +1,30 @@
+body{
+    background-color: var(--olive-color);
+}
+.gallery-wrapper{
+    padding: 0 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gallery{
+    width: 75%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gallery__item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.gallery__item-date{
+    font-size: 30px;
+    font-family: "UAF-Regular";
+}
+.gallery__item-img{
+    width: 100%;
+}

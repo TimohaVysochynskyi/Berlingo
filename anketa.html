@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>BERLINGO | Анкета на вступ</title>
+
+	<link rel="stylesheet" href="./styles/style.css" />
+	<link rel="stylesheet" href="./styles/anketa.css" />
+</head>
+
+<body>
+	<!-- ХЕДЕР -->
+	<header class="header">
+		<nav class="header__nav">
+			<div class="header__icon-wrapper">
+				<img src="./assets/mo.png" alt="МО" class="header__icon" />
+				<img src="./assets/lf.png" alt="LF" class="header__icon" />
+			</div>
+			<ul class="header__list">
+				<li class="header__list-item">
+					<a class="header__list-link" href="./index.html">Головна</a>
+				</li>
+				<li class="header__list-item">
+					<a class="header__list-link" href="./memory.html">Стіна пам'яті</a>
+				</li>
+				<li class="header__list-item">
+					<a class="header__list-link header__list-link-active" href="#">Анкета на вступ</a>
+				</li>
+				<li class="header__list-item">
+					<a class="header__list-link" href="./gallery.html">Галерея</a>
+				</li>
+				<li class="header__list-item">
+					<a class="header__list-link btn btn-bordered" href="#">Підтримати</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- АНКЕТА -->
+	<section class="anketa-wrapper">
+		<h1 class="anketa-title">Анкета на вступ до 210 ОСБ</h1>
+		<p class="anketa-note"><span>*</span> - обов'язкові поля</p>
+		<form action="" method="post" class="anketa">
+
+			<!-- ПЕРСОНАЛЬНІ ДАНІ -->
+			<div class="anketa__row">
+				<div class="anketa__input-wrapper name-input">
+					<label class="anketa__label" for="name">Ім'я <span>*</span></label>
+					<input id="name" class="anketa__input" type="text" placeholder="Степан" />
+				</div>
+				<div class="anketa__input-wrapper year-input">
+					<label class="anketa__label" for="year">Рік народження <span>*</span></label>
+					<input id="year" class="anketa__input" type="number" placeholder="1980" />
+				</div>
+				<div class="anketa__input-wrapper tel-input">
+					<label class="anketa__label" for="tel">Контактний номер телефону <span>*</span></label>
+					<input id="tel" class="anketa__input" type="number" placeholder="+38(0__)___ __ __" />
+				</div>
+			</div>
+
+			<!-- ОСВІТА -->
+			<div class="anketa__row">
+				<div class="anketa__input-wrapper degree-input">
+					<label class="anketa__label" for="degree">Освіта, спеціальність</label>
+					<input id="degree" class="anketa__input" type="text" placeholder="Не вибрано" />
+				</div>
+				<div class="anketa__input-wrapper school-input">
+					<label class="anketa__label" for="school">Навчальний заклад</label>
+					<input id="school" class="anketa__input" type="text" placeholder="Назва" />
+				</div>
+			</div>
+
+			<!-- ДОСВІД -->
+			<div class="anketa__row">
+				<div class="anketa__input-wrapper exp-in-structure-input">
+					<label class="anketa__label" for="exp-in-structure">Досвід у силових структурах?</label>
+					<div class="anketa__input-row">
+						<input name="exp-in-structure" id="exp-in-structure" class="anketa__input" type="radio" />
+						Так
+					</div>
+					<div class="anketa__input-row">
+						<input name="exp-in-structure" id="exp-in-structure" class="anketa__input" type="radio" />
+						Ні
+					</div>
+				</div>
+				<div class="anketa__input-wrapper structure-input">
+					<label class="anketa__label" for="structure">Де саме?</label>
+					<input id="structure" class="anketa__input" type="text" placeholder="Де? Як довго?" />
+				</div>
+				<div class="anketa__input-wrapper rank-input">
+					<label class="anketa__label" for="rank">Військове звання</label>
+					<input id="rank" class="anketa__input" type="text" placeholder="Не вибрано" />
+				</div>
+				<div class="anketa__input-wrapper vos-input">
+					<label class="anketa__label" for="vos">ВОС</label>
+					<input id="vos" class="anketa__input" type="text" placeholder="Стрілець" />
+				</div>
+			</div>
+			<div class="anketa__row">
+				<div class="anketa__input-wrapper exp-in-battle-input">
+					<label class="anketa__label" for="exp-in-battle">Бойовий досвід</label>
+					<div class="anketa__input-row">
+						<input name="exp-in-battle" id="exp-in-battle" class="anketa__input" type="radio"/>
+						Так
+					</div>
+					<div class="anketa__input-row">
+						<input name="exp-in-battle" id="exp-in-battle" class="anketa__input" type="radio"/>
+						Ні
+					</div>
+				</div>
+				<div class="anketa__input-wrapper battle-input">
+					<label class="anketa__label" for="battle">Де саме? Які роки?</label>
+					<input id="battle" class="anketa__input" type="text" placeholder="Бахмут, 2023" />
+				</div>
+				<div class="anketa__input-wrapper exp-with-guns-input">
+					<label class="anketa__label" for="exp-with-guns">Досвід зі зброєю?</label>
+					<div class="anketa__input-row">
+						<input name="exp-with-guns" id="exp-with-guns" class="anketa__input" type="radio"/>
+						Так
+					</div>
+					<div class="anketa__input-row">
+						<input name="exp-with-guns" id="exp-with-guns" class="anketa__input" type="radio"/>
+						Ні
+					</div>
+				</div>
+				<div class="anketa__input-wrapper guns-input">
+					<label class="anketa__label" for="guns">Якою саме зброєю?</label>
+					<input id="guns" class="anketa__input" type="text" placeholder="АК-74, РПГ-7" />
+				</div>
+			</div>
+
+			<!-- ПРИМІТКИ -->
+			<div class="anketa__row">
+				<div class="anketa__input-wrapper driver-input">
+					<label class="anketa__label" for="driver">Водійське посвідчення, категорія</label>
+					<input id="driver" class="anketa__input" type="text" placeholder="Категорія С" />
+				</div>
+				<div class="anketa__input-wrapper notes-input">
+					<label class="anketa__label" for="notes">Примітки</label>
+					<input id="notes" class="anketa__input" type="text" placeholder="Додаткові навички, уміння" />
+				</div>
+			</div>
+
+			<div class="anketa__row">
+				<button type="submit" class="btn btn-filled anketa__btn">Відправити анкету</button>
+			</div>
+		</form>
+	</section>
+	
+	<script src="./scripts/radio.js"></script>
+</body>
+
+</html>
