@@ -1,0 +1,100 @@
+body {
+    background-color: var(--tertiary-color);
+}
+
+.header__about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 50px;
+    margin-top: 50px;
+    padding: 0px 150px;
+    width: 100%;
+}
+
+.header__about-logo {
+    height: 250px;
+}
+
+.header__about-title {
+    color: var(--white-color);
+}
+
+.header__about-title span {
+    color: var(--accent-color);
+}
+
+.header__about-text {
+    color: var(--white-color);
+    margin-top: 10px;
+    line-height: 24px;
+    font-size: 18px;
+}
+
+.lost-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lost {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 75%;
+}
+
+.lost__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 360px;
+    height: 600px;
+    background-color: var(--black-color);
+    padding: 5px;
+}
+
+.lost__item-img {
+    height: 360px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center top;
+    margin-top: -1px;
+}
+
+.lost__item-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.lost__item-data p {
+    color: var(--white-color);
+    text-align: center;
+}
+
+.lost__item-personal {
+    line-height: 30px;
+}
+
+.lost__item-rank {
+    font-size: 18px;
+}
+
+.lost__item-name {
+    font-size: 24px;
+}
+
+.lost__item-psevdo {
+    font-size: 18px;
+}
+
+.lost__item-description {
+    font-size: 20px;
+}
