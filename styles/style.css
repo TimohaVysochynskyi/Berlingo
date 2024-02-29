@@ -31,6 +31,7 @@ html {
     letter-spacing: 1px;
     font-size: 20px;
     transition: .3s ease;
+    text-align: center;
 }
 
 .btn:hover {

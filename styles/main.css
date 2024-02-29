@@ -31,9 +31,11 @@
     text-align: center;
     gap: 20px 20px;
 }
-.header__content-title{
+
+.header__content-title {
     font-size: 64px;
 }
+
 .header__content-name {
     color: var(--white-color);
 }
@@ -108,18 +110,19 @@
 .about__row:last-child .about__img {
     object-position: top;
 }
-.about__img{
-    display: none;
-}
+
 .about__title {
     font-size: 44px;
     text-transform: uppercase;
     font-weight: 500;
     color: var(--olive-color);
 }
-.about__title-mobile{
+
+.about__title-mobile,
+.about__img-mobile {
     display: none;
 }
+
 .about__text {
     font-size: 20px;
     text-align: justify;
