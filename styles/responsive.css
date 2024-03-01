@@ -7,7 +7,11 @@
         font-size: 50px;
     }
 
-    section {
+    section
+    .header__about,
+    .lost-wrapper,
+    .anketa-wrapper,
+    .gallery-wrapper {
         padding: 35px 100px;
     }
 
@@ -65,13 +69,27 @@
         width: 220px;
         height: 220px;
     }
+
+
+    /** MEMORY WALL **/
+    .lost{
+        width: 100%;
+    }
+    .gallery{
+        width: 100%;
+    }
 }
 
 
+/** LAPTOP medium **/
+@media screen and (max-width: 1280px){
+    .anketa__input{
+        font-size: 22px;
+        padding: 8px 0;
+    }
+}
 
 /** LAPTOP small **/
-
-
 @media screen and (max-width: 1024px) {
 
     h1,
@@ -79,7 +97,11 @@
         font-size: 44px;
     }
 
-    section {
+    section,
+    .header__about,
+    .lost-wrapper,
+    .anketa-wrapper,
+    .gallery-wrapper {
         padding: 30px 60px;
     }
 
@@ -228,11 +250,22 @@
     .full-contact__content-block:first-child {
         width: 100%;
     }
+
+    
+    /** Anketa **/
+    .anketa__label{
+        font-size: 15px;
+        font-family: "UAF-Regular";
+        letter-spacing: .5px;
+    }
+    .anketa__input{
+        font-size: 18px;
+    }
 }
 
 
 
-/** TABLET small **/
+/** TABLET **/
 
 @media screen and (max-width: 768px) {
     .header__nav {
@@ -387,6 +420,47 @@
     .full-contact__title br {
         display: none;
     }
+
+    
+    /** MEMORY WALL **/
+    .header__about-logo{
+        display: none;
+    }
+    .header__about-title{
+        text-align: center;
+    }
+    .header__about-col{
+        width: 100%;
+    }
+    .header__about-text{
+        text-align: justify;
+    }
+
+
+    /** Anketa **/
+    .anketa__row{
+        flex-wrap: wrap;
+        gap: 55px 0;
+    }
+    .exp-in-structure-input,
+    .rank-input,
+    .exp-in-battle-input,
+    .exp-with-guns-input{
+        width: calc(35% - 15px);
+        margin-left: 0;
+    }
+    .structure-input,
+    .vos-input,
+    .battle-input,
+    .guns-input{
+        width: calc(65% - 15px);
+        margin-right: 0;
+    }
+    .driver-input,
+    .notes-input{
+        margin: 0;
+        width: 100%;
+    }
 }
 
 
@@ -442,15 +516,29 @@
         gap: 25px 0;
         justify-content: center;
     }
-}
 
+
+    /** Anketa **/
+
+    .anketa__row{
+        flex-direction: column;
+    }
+    .anketa__input-wrapper{
+        margin: 0;
+        width: 100%;
+    }
+}
 
 
 
 /** MOBILE large **/
 
 @media screen and (max-width: 425px) {
-    section {
+    section,
+    .header__about,
+    .lost-wrapper,
+    .anketa-wrapper,
+    .gallery-wrapper {
         padding: 10px 10px;
     }
 
@@ -542,6 +630,18 @@
 
     .header__content-pointer-wrapper {
         display: none;
+    }
+
+
+    /** Gallery **/
+    .gallery__item-date{
+        font-size: 24px;
+    }
+    .gallery__item-description{
+        font-size: 20px;
+    }
+    .gallery__item{
+        padding: 10px 0;
     }
 }
 
