@@ -64,6 +64,7 @@ body {
     object-fit: cover;
     object-position: center top;
     margin-top: -1px;
+    filter: brightness(0.8) contrast(110%) grayscale(100%) drop-shadow(0px 0px 4px #181818);
 }
 
 .lost__item-data {
