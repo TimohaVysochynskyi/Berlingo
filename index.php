@@ -25,7 +25,7 @@
           <a class="header__list-link header__list-link-active" href="#">Головна</a>
         </li>
         <li class="header__list-item">
-          <a class="header__list-link" href="./memory">Стіна пам'яті</a>
+          <a class="header__list-link" href="">Стіна пам'яті</a>
         </li>
         <li class="header__list-item">
           <a class="header__list-link" href="./anketa">Анкета на вступ</a>
@@ -324,7 +324,7 @@
     <div class="wall__col">
       <h2 class="wall__title">Ми <span>Пам’ятаємо!</span></h2>
       <p class="wall__subtitle">Вони боролись за наше майбутнє</p>
-      <a href="./memory" class="btn btn-filled">Відкрити стіну пам'яті</a>
+      <a href="" class="btn btn-filled">Відкрити стіну пам'яті</a>
     </div>
     <div class="wall__col">
       <img src="./assets/berlingo-black&white.png" alt="Емблема батальйону" class="wall__logo" />
@@ -346,7 +346,7 @@
       </div>
       <div class="full-contact__content-block">
         <h3 class="full-contact__content-title">Наша електронна пошта</h3>
-        <a href="mailto:a4122@post.mil.gov.ua" class="full-contact__content-link">a4122@post.mil.gov.ua</a>
+        <a href="mailto:osberlingo210@gmail.com" class="full-contact__content-link">osberlingo210@gmail.com</a>
       </div>
     </div>
     <div class="full-contact__col">
@@ -386,7 +386,7 @@
           <a class="footer__list-link" href="./anketa">Анкета на вступ</a>
         </li>
         <li class="footer__list-item">
-          <a class="footer__list-link" href="./memory">Стіна пам'яті</a>
+          <a class="footer__list-link" href="">Стіна пам'яті</a>
         </li>
       </ul>
     </nav>

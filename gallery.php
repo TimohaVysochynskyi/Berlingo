@@ -26,7 +26,7 @@
 					<a class="header__list-link" href="./">Головна</a>
 				</li>
 				<li class="header__list-item">
-					<a class="header__list-link" href="./memory">Стіна пам'яті</a>
+					<a class="header__list-link" href="">Стіна пам'яті</a>
 				</li>
 				<li class="header__list-item">
 					<a class="header__list-link" href="./anketa">Анкета на вступ</a>
@@ -80,7 +80,7 @@
 					<a class="footer__list-link" href="./anketa">Анкета на вступ</a>
 				</li>
 				<li class="footer__list-item">
-					<a class="footer__list-link" href="./memory">Стіна пам'яті</a>
+					<a class="footer__list-link" href="">Стіна пам'яті</a>
 				</li>
 			</ul>
 		</nav>

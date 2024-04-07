@@ -26,7 +26,7 @@
 					<a class="header__list-link" href="./">Головна</a>
 				</li>
 				<li class="header__list-item">
-					<a class="header__list-link" href="./memory">Стіна пам'яті</a>
+					<a class="header__list-link" href="">Стіна пам'яті</a>
 				</li>
 				<li class="header__list-item">
 					<a class="header__list-link header__list-link-active" href="#">Анкета на вступ</a>
