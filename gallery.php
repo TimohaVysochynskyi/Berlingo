@@ -45,24 +45,7 @@
 
 	<!-- ГАЛЕРЕЯ -->
 	<section class="gallery-wrapper">
-		<ul class="gallery" id="post-list">
-			<li class="gallery__item">
-				<p class="gallery__item-date">21.12.2023</p>
-				<img src="./assets/gallery/slider1.png" class="gallery__item-img">
-				<p class="gallery__item-description">Особовий склад 210 окремого спеціального батальйону “BERLINGO” на
-					заняттях з вогневої підготовки. Працює розрахунок СПГ-9.
-					Разом до Перемоги!</p>
-			</li>
-			<div class="gallery__item">
-				<hr class="gallery__line">
-			</div>
-			<li class="gallery__item">
-				<p class="gallery__item-date">10.08.2023</p>
-				<img src="./assets/gallery/slider2.png" class="gallery__item-img">
-				<p class="gallery__item-description">Кулеметні групи готові до зустрічі з ворожими безпілотниками. Veni,
-					vidi, vici...</p>
-			</li>
-		</ul>
+		<ul class="gallery" id="post-list"></ul>
 	</section>
 
 	<!-- ФУТЕР -->
@@ -90,6 +73,7 @@
 		integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="./scripts/burger.js"></script>
+	<script src="./scripts/gallery.js"></script>
 </body>
 
 </html>
