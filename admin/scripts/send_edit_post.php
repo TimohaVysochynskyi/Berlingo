@@ -13,30 +13,28 @@ require_once "../../connect.php";
 
 $id = htmlspecialchars(strip_tags($_GET['id']));
 
-$photoData = $conn->query("SELECT `photo` FROM `memory` WHERE `id` = '$id'");
+$photoData = $conn->query("SELECT `photo` FROM `gallery` WHERE `id` = '$id'");
 $photoData = $photoData->fetch_assoc();
 $photo = $photoData['photo'];
 
-$name = $conn->real_escape_string($_POST['name']);
-$psevdo = $conn->real_escape_string($_POST['psevdo']);
-$rank = $conn->real_escape_string($_POST['rank']);
+$title = $conn->real_escape_string($_POST['title']);
 $description = $conn->real_escape_string($_POST['description']);
 
 $photoName = $_FILES['photo']["name"];
 $photoTemp = $_FILES['photo']["tmp_name"];
-$photoFolder = "../../assets/memory/" . $photoName;
+$photoFolder = "../../assets/gallery/" . $photoName;
 
 if ($photoName == "" || $photoTemp == "" || empty($photoName) || empty($photoTemp)) {
     $photoName = $photo;
 } else {
-    unlink("../../assets/memory/" . $photo);
+    unlink("../../assets/gallery/" . $photo);
     move_uploaded_file($photoTemp, $photoFolder);
 }
 
 if (
-    $conn->query("UPDATE `memory` SET `name` = '$name', `psevdo` = '$psevdo', `rank` = '$rank', `description` = '$description', `photo` = '$photoName' WHERE `id` = '$id'")
+    $conn->query("UPDATE `gallery` SET `name` = '$name', `description` = '$description', `photo` = '$photoName' WHERE `id` = '$id'")
 ) {
-    header("Location: ../?page=memory");
+    header("Location: ../?page=gallery");
 } else {
     $errorMessage = 'Виникла помилка. Спробуйте ще раз';
 }

@@ -14,8 +14,8 @@ require_once "../../connect.php";
 $id = htmlspecialchars(strip_tags($_POST['id']));
 $photo = htmlspecialchars(strip_tags($_POST['photo']));
 
-if ($conn->query("DELETE FROM `memory` WHERE `id` = '$id'")) {
-    unlink("../../assets/memory/" . $photo);
+if ($conn->query("DELETE FROM `gallery` WHERE `id` = '$id'")) {
+    unlink("../../assets/gallery/" . $photo);
 }
 
 

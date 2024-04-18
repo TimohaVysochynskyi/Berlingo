@@ -352,21 +352,22 @@
     <div class="full-contact__col">
       <div class="full-contact__qr-block">
         <h3 class="full-contact__qr-title">
-          Наш <a class="full-contact__qr-link" href="">Фейсбук</a>
+          Наш <a class="full-contact__qr-link"
+            href="https://www.facebook.com/profile.php?id=100087101127695">Фейсбук</a>
         </h3>
-        <img src="assets/qr.png" alt="QR-код на Facebook" class="full-contact__qr-img" />
+        <img src="assets/fb-qr.png" alt="QR-код на Facebook" class="full-contact__qr-img" />
       </div>
       <div class="full-contact__qr-block">
         <h3 class="full-contact__qr-title">
-          Наш <a class="full-contact__qr-link" href="">Інстаграм</a>
+          Наш <a class="full-contact__qr-link" href="https://www.instagram.com/210berlingo_official/">Інстаграм</a>
         </h3>
-        <img src="assets/qr.png" alt="QR-код на Instagram" class="full-contact__qr-img" />
+        <img src="assets/inst-qr.png" alt="QR-код на Instagram" class="full-contact__qr-img" />
       </div>
       <div class="full-contact__qr-block">
         <h3 class="full-contact__qr-title">
-          Наш <a class="full-contact__qr-link" href="">Ютуб</a>
+          Наш <a class="full-contact__qr-link" href="https://www.youtube.com/@210Berlingo/">Ютуб</a>
         </h3>
-        <img src="assets/qr.png" alt="QR-код на YouTube" class="full-contact__qr-img" />
+        <img src="assets/yt-qr.png" alt="QR-код на YouTube" class="full-contact__qr-img" />
       </div>
     </div>
   </section>

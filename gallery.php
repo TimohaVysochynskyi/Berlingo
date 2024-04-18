@@ -45,7 +45,7 @@
 
 	<!-- ГАЛЕРЕЯ -->
 	<section class="gallery-wrapper">
-		<ul class="gallery">
+		<ul class="gallery" id="post-list">
 			<li class="gallery__item">
 				<p class="gallery__item-date">21.12.2023</p>
 				<img src="./assets/gallery/slider1.png" class="gallery__item-img">
