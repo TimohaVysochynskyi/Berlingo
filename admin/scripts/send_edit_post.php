@@ -20,8 +20,8 @@ $photo = $photoData['photo'];
 $title = $conn->real_escape_string($_POST['title']);
 $description = $conn->real_escape_string($_POST['description']);
 
-$photoName = $_FILES['photo']["name"];
-$photoTemp = $_FILES['photo']["tmp_name"];
+$photoName = $conn->real_escape_string($_FILES['photo']["name"]);
+$photoTemp = $conn->real_escape_string($_FILES['photo']["tmp_name"]);
 $photoFolder = "../../assets/gallery/" . $photoName;
 
 if ($photoName == "" || $photoTemp == "" || empty($photoName) || empty($photoTemp)) {

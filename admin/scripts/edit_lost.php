@@ -37,8 +37,7 @@ $photoFolder = "../assets/memory/" . $photo;
                     value="<?php echo $lost['rank'] ?>">
                 <textarea name="description" class="form-control" placeholder="Опис"
                     required=""><?php echo $lost['description'] ?></textarea>
-                <input type="file" name="photo" id="input-photo" class="form-control" placeholder="Фотографія"
-                    required="">
+                <input type="file" name="photo" id="input-photo" class="form-control" placeholder="Фотографія">
             </div>
             <img src="<?php echo $photoFolder ?>" alt="Фото" class="edit-form__photo" id="display-photo">
         </div>

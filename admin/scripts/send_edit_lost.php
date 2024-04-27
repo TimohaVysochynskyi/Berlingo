@@ -22,8 +22,8 @@ $psevdo = $conn->real_escape_string($_POST['psevdo']);
 $rank = $conn->real_escape_string($_POST['rank']);
 $description = $conn->real_escape_string($_POST['description']);
 
-$photoName = $_FILES['photo']["name"];
-$photoTemp = $_FILES['photo']["tmp_name"];
+$photoName = $conn->real_escape_string($_FILES['photo']["name"]);
+$photoTemp = $conn->real_escape_string($_FILES['photo']["tmp_name"]);
 $photoFolder = "../../assets/memory/" . $photoName;
 
 if ($photoName == "" || $photoTemp == "" || empty($photoName) || empty($photoTemp)) {
