@@ -4,12 +4,12 @@ session_start();
 
 // Security measures
 if (!isset($_SESSION['admin']) && $_SESSION['admin'] !== true) {
-    header("Location: ../secure");
+    header("Location: ../../secure");
     die();
 }
 
 
-require_once "../../connect.php";
+require_once "../../../connect.php";
 
 $lostData = $conn->query("SELECT * FROM `memory`");
 
@@ -44,8 +44,7 @@ $lostData = $conn->query("SELECT * FROM `memory`");
                 </td>
                 <td>
                     <a href="#" onclick="editLost(<?php echo $lost['id'] ?>)" class="text-info">Редагувати</a><br>
-                    <a href="#" onclick="deleteLost(<?php echo $lost['id'] ?>, '<?php echo $lost['photo'] ?>')"
-                        class="text-danger">Вилучити</a>
+                    <a href="#" onclick="deleteLost(<?php echo $lost['id'] ?>)" class="text-danger">Вилучити</a>
                 </td>
             </tr>
         <?php endforeach ?>
@@ -57,17 +56,17 @@ $lostData = $conn->query("SELECT * FROM `memory`");
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script>
-    function deleteLost(id, photo) {
+    function deleteLost(id) {
         $.ajax({
             type: "POST",
-            url: './scripts/delete_lost.php',
-            data: { id: id, photo: photo },
+            url: './scripts/memory/delete_lost.php',
+            data: { id: id },
             success: function (data) {
-                $("#lost-wrapper").load('./scripts/get_lost.php');
+                $("#lost-wrapper").load('./scripts/memory/get_lost.php');
             }
         });
     }
     function editLost(id) {
-        $('#container').load('./scripts/edit_lost.php?id=' + id);
+        $('#container').load('./scripts/memory/edit_lost.php?id=' + id);
     }
 </script>

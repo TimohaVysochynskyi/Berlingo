@@ -4,12 +4,12 @@ session_start();
 
 // Security measures
 if (!isset($_SESSION['admin']) && $_SESSION['admin'] !== true) {
-    header("Location: ../secure");
+    header("Location: ../../secure");
     die();
 }
 
 
-require_once "../../connect.php";
+require_once "../../../connect.php";
 
 $postData = $conn->query("SELECT * FROM `gallery`");
 
@@ -40,8 +40,7 @@ $postData = $conn->query("SELECT * FROM `gallery`");
                 </td>
                 <td>
                     <a href="#" onclick="editPost(<?php echo $post['id'] ?>)" class="text-info">Редагувати</a><br>
-                    <a href="#" onclick="deletePost(<?php echo $post['id'] ?>, '<?php echo $post['photo'] ?>')"
-                        class="text-danger">Вилучити</a>
+                    <a href="#" onclick="deletePost(<?php echo $post['id'] ?>)" class="text-danger">Вилучити</a>
                 </td>
             </tr>
         <?php endforeach ?>
@@ -53,17 +52,17 @@ $postData = $conn->query("SELECT * FROM `gallery`");
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script>
-    function deletePost(id, photo) {
+    function deletePost(id, image) {
         $.ajax({
             type: "POST",
-            url: './scripts/delete_post.php',
-            data: { id: id, photo: photo },
+            url: './scripts/gallery/delete_post.php',
+            data: { id: id },
             success: function (data) {
-                $("#gallery-wrapper").load('./scripts/get_post.php');
+                $("#gallery-wrapper").load('./scripts/gallery/get_post.php');
             }
         });
     }
     function editPost(id) {
-        $('#container').load('./scripts/edit_post.php?id=' + id);
+        $('#container').load('./scripts/gallery/edit_post.php?id=' + id);
     }
 </script>

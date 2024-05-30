@@ -8,7 +8,7 @@ if (!isset($_SESSION['admin']) && $_SESSION['admin'] !== true) {
 
 
 require_once "../connect.php";
-$anketaData = $conn->query("SELECT * FROM `anketa`");
+$anketaData = $conn->query("SELECT * FROM `anketa` ORDER BY `id` DESC");
 ?>
 
 <style>
@@ -57,7 +57,7 @@ $anketaData = $conn->query("SELECT * FROM `anketa`");
     function deleteAnketa(id) {
         $.ajax({
             type: "POST",
-            url: './scripts/delete_anketa.php',
+            url: './scripts/anketa/delete_anketa.php',
             data: { id: id },
             success: function (data) {
                 window.location.href = "./?page=anketa";
@@ -65,6 +65,6 @@ $anketaData = $conn->query("SELECT * FROM `anketa`");
         });
     }
     function openAnketa(id) {
-        $('#container').load('./scripts/open_anketa.php?id=' + id);
+        $('#container').load('./scripts/anketa/open_anketa.php?id=' + id);
     }
 </script>

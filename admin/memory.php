@@ -8,7 +8,7 @@ if (!isset($_SESSION['admin']) && $_SESSION['admin'] !== true) {
 
 ?>
 
-<form class="memory-form" method="post" action="./scripts/add_lost.php" enctype="multipart/form-data">
+<form class="memory-form" method="post" action="./scripts/memory/add_lost.php" enctype="multipart/form-data">
     <h1 class="h3 mb-1 font-weight-normal text-center">Додавання на стіну пам'яті</h1>
     <input type="text" name="name" class="form-control" placeholder="Ім'я та прізвище" required="">
     <input type="text" name="psevdo" class="form-control" placeholder="Позивний" required="">
@@ -34,6 +34,6 @@ if (!isset($_SESSION['admin']) && $_SESSION['admin'] !== true) {
 
 <script>
     $(document).ready(function () {
-        $('#lost-wrapper').load('./scripts/get_lost.php');
+        $('#lost-wrapper').load('./scripts/memory/get_lost.php');
     });
 </script>

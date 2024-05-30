@@ -1,20 +1,7 @@
 <?php
-
 session_start();
 
 $_SESSION['admin'] = false;
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $password = 'B0r0nym0_$v0iE';
-    $passwordInput = test_input($_POST['password']);
-
-    if (md5($passwordInput) === md5($password)) {
-        $_SESSION['admin'] = true;
-        header("Location: ../admin/");
-    } else {
-        $errorMessage = "Невірний пароль";
-    }
-}
 
 function test_input($data)
 {
@@ -27,6 +14,18 @@ function test_input($data)
     }
     return $data;
 }
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $password = 'd8af0129cdfd7981f9f2fef3c7ff9800';
+    $passwordInput = test_input($_POST['password']);
+
+    if (md5($passwordInput) === $password) {
+        $_SESSION['admin'] = true;
+        header("Location: ../admin/");
+    } else {
+        $errorMessage = "Невірний пароль";
+    }
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -45,7 +44,7 @@ function test_input($data)
 <body>
 
     <main class="form-wrapper">
-        <form class="auth-form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+        <form class="auth-form" method="post" action="./secure">
             <img class="mb-1 auth-form__logo" src="../assets/berlingo-colored.png" alt="Логотип">
             <h1 class="h3 mb-1 font-weight-normal text-center">Авторизуйтеся</h1>
             <input type="password" name="password" class="form-control" placeholder="Пароль" required="">

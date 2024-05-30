@@ -7,8 +7,7 @@
         font-size: 50px;
     }
 
-    section
-    .header__about,
+    section .header__about,
     .lost-wrapper,
     .anketa-wrapper,
     .gallery-wrapper {
@@ -72,18 +71,19 @@
 
 
     /** MEMORY WALL **/
-    .lost{
+    .lost {
         width: 100%;
     }
-    .gallery{
+
+    .gallery {
         width: 100%;
     }
 }
 
 
 /** LAPTOP medium **/
-@media screen and (max-width: 1280px){
-    .anketa__input{
+@media screen and (max-width: 1280px) {
+    .anketa__input {
         font-size: 22px;
         padding: 8px 0;
     }
@@ -251,14 +251,15 @@
         width: 100%;
     }
 
-    
+
     /** Anketa **/
-    .anketa__label{
+    .anketa__label {
         font-size: 15px;
         font-family: "UAF-Regular";
         letter-spacing: .5px;
     }
-    .anketa__input{
+
+    .anketa__input {
         font-size: 18px;
     }
 }
@@ -421,45 +422,57 @@
         display: none;
     }
 
-    
+
     /** MEMORY WALL **/
-    .header__about-logo{
+    .header__about-logo {
         display: none;
     }
-    .header__about-title{
+
+    .header__about-title {
         text-align: center;
     }
-    .header__about-col{
+
+    .header__about-col {
         width: 100%;
     }
-    .header__about-text{
+
+    .header__about-text {
         text-align: justify;
     }
 
 
     /** Anketa **/
-    .anketa__row{
+    .anketa__row {
         flex-wrap: wrap;
         gap: 55px 0;
     }
+
     .exp-in-structure-input,
     .rank-input,
     .exp-in-battle-input,
-    .exp-with-guns-input{
+    .exp-with-guns-input {
         width: calc(35% - 15px);
         margin-left: 0;
     }
+
     .structure-input,
     .vos-input,
     .battle-input,
-    .guns-input{
+    .guns-input {
         width: calc(65% - 15px);
         margin-right: 0;
     }
+
     .driver-input,
-    .notes-input{
+    .notes-input {
         margin: 0;
         width: 100%;
+    }
+
+
+    /** Gallery **/
+    .main-swiper {
+        height: 50vh;
     }
 }
 
@@ -520,10 +533,11 @@
 
     /** Anketa **/
 
-    .anketa__row{
+    .anketa__row {
         flex-direction: column;
     }
-    .anketa__input-wrapper{
+
+    .anketa__input-wrapper {
         margin: 0;
         width: 100%;
     }
@@ -534,6 +548,7 @@
 /** MOBILE large **/
 
 @media screen and (max-width: 425px) {
+
     section,
     .header__about,
     .lost-wrapper,
@@ -616,10 +631,6 @@
         text-align: center;
     }
 
-    .full-contact__col:last-child {
-        display: none;
-    }
-
     .footer__list {
         gap: 20px;
     }
@@ -634,14 +645,28 @@
 
 
     /** Gallery **/
-    .gallery__item-date{
+    .gallery__item-date {
         font-size: 24px;
     }
-    .gallery__item-description{
+
+    .gallery__item-description {
         font-size: 20px;
     }
-    .gallery__item{
+
+    .gallery__item {
         padding: 10px 0;
+    }
+
+    .swiper-pagination {
+        display: block !important;
+    }
+
+    .main-swiper {
+        height: 30vh;
+    }
+
+    .thumb-swiper {
+        display: none !important;
     }
 }
 
@@ -661,5 +686,9 @@
 
     .header__list-link {
         font-size: 20px !important;
+    }
+
+    .main-swiper {
+        height: 25vh;
     }
 }

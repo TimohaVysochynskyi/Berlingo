@@ -4,12 +4,12 @@ session_start();
 
 // Security measures
 if (!isset($_SESSION['admin']) && $_SESSION['admin'] !== true) {
-    header("Location: ../secure");
+    header("Location: ../../secure");
     die();
 }
 
 
-require_once "../../connect.php";
+require_once "../../../connect.php";
 
 $id = htmlspecialchars(strip_tags($_POST['id']));
 

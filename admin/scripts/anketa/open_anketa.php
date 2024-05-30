@@ -4,12 +4,12 @@ session_start();
 
 // Security measures
 if (!isset($_SESSION['admin']) && $_SESSION['admin'] !== true) {
-    header("Location: ../secure");
+    header("Location: ../../secure");
     die();
 }
 
 
-require_once "../../connect.php";
+require_once "../../../connect.php";
 
 $id = htmlspecialchars(strip_tags($_GET['id']));
 
@@ -32,6 +32,7 @@ $expWithGuns = ($anketa['exp-with-guns'] == 1 ? "Так" : "Ні");
 $guns = $anketa['guns'];
 $driver = ($anketa['driver'] == 0 ? "Немає" : $anketa['driver']);
 $notes = $anketa['notes'];
+$date = $anketa['date'];
 
 
 ?>
@@ -194,6 +195,12 @@ $notes = $anketa['notes'];
             <h3 class="list-title">Примітки: </h3>
             <p class="list-text">
                 <?php echo $notes ?>
+            </p>
+        </li>
+        <li class="list__item">
+            <h3 class="list-title">Дата створення: </h3>
+            <p class="list-text">
+                <?php echo $date ?>
             </p>
         </li>
     </ul>
