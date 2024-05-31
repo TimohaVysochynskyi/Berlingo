@@ -28,8 +28,6 @@ $photoFolder = "../../assets/gallery/" . $photo;
         enctype="multipart/form-data">
         <h2 class="h3 mb-1 font-weight-normal text-center">Редагування</h2>
         <div class="w-100">
-            <input type="text" name="title" class="form-control" placeholder="Заголовок" required=""
-                value="<?php echo $post['title'] ?>">
             <textarea name="description" class="form-control mt-3" placeholder="Опис"
                 required=""><?php echo $post['description'] ?></textarea>
             <input type="file" name="image[]" id="input-photo" multiple class="form-control mt-3"

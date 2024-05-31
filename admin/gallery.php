@@ -10,7 +10,6 @@ if (!isset($_SESSION['admin']) && $_SESSION['admin'] !== true) {
 
 <form class="memory-form" method="post" action="./scripts/gallery/add_post.php" enctype="multipart/form-data">
     <h1 class="h3 mb-1 font-weight-normal text-center">Створення поста</h1>
-    <input type="text" name="title" class="form-control" placeholder="Заголовок" required="">
     <textarea name="description" class="form-control" placeholder="Опис" required=""></textarea>
     <input type="file" name="image[]" multiple class="form-control" placeholder="Фотографії" required="">
     <button class="btn btn-lg btn-primary btn-block w-100" type="submit">Додати</button>

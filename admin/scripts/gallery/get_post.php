@@ -24,7 +24,7 @@ $postData = $conn->query("SELECT * FROM `gallery`");
 <table class="table">
     <thead>
         <tr>
-            <th scope="col">Заголовок</th>
+            <th scope="col">Опис</th>
             <th scope="col">Дата</th>
             <th scope="col">Дія</th>
         </tr>
@@ -33,7 +33,7 @@ $postData = $conn->query("SELECT * FROM `gallery`");
         <?php foreach ($postData as $post): ?>
             <tr>
                 <td>
-                    <?php echo $post['title']; ?>
+                    <?php echo $post['description']; ?>
                 </td>
                 <td>
                     <?php echo $post['date']; ?>

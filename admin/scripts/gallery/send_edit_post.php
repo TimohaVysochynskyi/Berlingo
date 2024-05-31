@@ -18,7 +18,6 @@ $oldImageData = $oldImageData->fetch_assoc();
 $oldImageName = $oldImageData['image'];
 $oldImageArray = explode("|", $oldImageName);
 
-$title = $conn->real_escape_string($_POST['title']);
 $description = $conn->real_escape_string($_POST['description']);
 
 $imageNameArray = $_FILES['image']["name"];
@@ -43,7 +42,7 @@ foreach ($imageNameArray as $imageName) {
 
 $finalImageNameArray = $conn->real_escape_string($finalImageNameArray);
 
-if ($conn->query("UPDATE `gallery` SET `title` = '$title', `description` = '$description', `image` = '$finalImageNameArray' WHERE `id` = '$id'")) {
+if ($conn->query("UPDATE `gallery` SET `description` = '$description', `image` = '$finalImageNameArray' WHERE `id` = '$id'")) {
     header("Location: ../../?page=gallery");
 } else {
     echo 'Виникла помилка. Спробуйте ще раз або зв\'яжіться з розробником';

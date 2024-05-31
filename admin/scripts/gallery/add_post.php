@@ -11,7 +11,6 @@ if (!isset($_SESSION['admin']) && $_SESSION['admin'] !== true) {
 
 require_once "../../../connect.php";
 
-$title = $conn->real_escape_string($_POST['title']);
 $description = $conn->real_escape_string($_POST['description']);
 
 $imageNameArray = $_FILES['image']["name"];
@@ -28,12 +27,12 @@ foreach ($imageNameArray as $imageName) {
 
 $finalImageNameArray = $conn->real_escape_string($finalImageNameArray);
 
-if (!$conn->query("INSERT INTO `gallery` (`title`, `description`, `image`) VALUES ('$title', '$description', '$finalImageNameArray')")) {
+if (!$conn->query("INSERT INTO `gallery` (`description`, `image`) VALUES ('$description', '$finalImageNameArray')")) {
     echo 'Виникла помилка. Спробуйте ще раз або зв\'яжіться з розробником';
     exit();
 }
 
-$postIdData = $conn->query("SELECT `id` FROM `gallery` WHERE `title` = '$title' AND `description` = '$description' AND `image` = '$finalImageNameArray'");
+$postIdData = $conn->query("SELECT `id` FROM `gallery` WHERE `description` = '$description' AND `image` = '$finalImageNameArray'");
 $postIdData = $postIdData->fetch_assoc();
 $postId = $postIdData['id'];
 
